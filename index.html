@@ -5,9 +5,9 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
     <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
+     <meta property="og:title" content="티온의 Today I Learn" />
+     <meta property="og:description" content="내가 자처한 모든 순간의 고통을 나는 사랑할 것이다." />
+     <meta property="og:image" content="./images/thumbnail.png" />
 
     <title>Today I Learn</title>
     <link rel="stylesheet" href="./css/main.css" />
@@ -15,26 +15,28 @@
   </head>
   <body>
     <!-- 상단 내비게이션 -->
-    <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
-      <ul class="nav-links">
-        <li><a href="#about">자기소개</a></li>
-        <li><a href="#gallery">갤러리</a></li>
-        <li><a href="#works">인생 작품</a></li>
-        <li><a href="#til">TIL</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="top-nav">
+        <span class="nav-logo">My Page</span>
+        <ul class="nav-links">
+          <li><a href="#about">자기소개</a></li>
+          <li><a href="#gallery">갤러리</a></li>
+          <li><a href="#works">인생 작품</a></li>
+          <li><a href="#til">TIL</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- 프로필 히어로 -->
     <section class="hero" id="about">
       <div class="profile-card">
         <div class="profile-image">
           <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+           <img src="./images/profile.png" alt="티온 프로필 사진" />
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>티온 (김용성)</h1>
+          <p class="tagline">내가 자처한 모든 순간의 고통을 나는 사랑할 것이다.</p>
         </div>
       </div>
     </section>
@@ -43,7 +45,15 @@
       <!-- 자기소개 -->
       <section class="content-section">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
+        <p>
+          안녕하세요, 매일 통학에 편도 2시간씩 소모하는 티온입니다.
+          매일 통학시간에 휴식겸 책읽기를 목표로 하고있습니다.
+          제가 지금 읽고 있는책은
+          <a href="https://product.kyobobook.co.kr/detail/S000217551436" target="_blank">『위로는 서툴수록 좋다』</a>
+          입니다. 오늘 오는길에 다 읽었네요 ㅎㅎ.<br>
+          엄마와 군대 이야기가 나오는 파트는 정말 눈물이 나오는데요.<br>
+          출근길에 펑펑 울었습니다.... 정말 곤란 했죠
+        </p>
         <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
       </section>
 
@@ -54,19 +64,19 @@
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>티온</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>INTJ</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>클라이밍, 책읽기, 소설보기</td>
           </tr>
           <tr>
-            <th>좋아하는 음식</th>
-            <td></td>
+            <th>좋아하는 요리</th>
+            <td>면요리, 간장베이스 깔끔한 국물, 희옥짱짱맨</td>
           </tr>
         </table>
       </section>
@@ -74,14 +84,18 @@
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">기억의 소용돌이</p>
         <div class="gallery-grid">
           <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+          <img src="./images/gallery/고양이.jpg" alt="여행 사진 1" />
+          <img src="./images/gallery/눈사람.jpg" alt="여행 사진 2" />
+          <img src="./images/gallery/밥과전구.jpg" alt="여행 사진 3" />
+          <img src="./images/gallery/벚꽃.jpg" alt="여행 사진 4" />
+          <img src="./images/gallery/스키장.jpg" alt="여행 사진 5" />
+          <img src="./images/gallery/스키휴식.jpg" alt="여행 사진 6" />
+          <img src="./images/gallery/일본.jpg" alt="여행 사진 7" />
+          <img src="./images/gallery/퇴근길.jpg" alt="여행 사진 8" />
+          <img src="./images/gallery/후쿠오카.jpg" alt="여행 사진 9" />
         </div>
       </section>
 
@@ -91,15 +105,33 @@
         <div class="works-list">
           <!-- TODO: 최소 2가지 작품을 소개하세요 -->
           <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-          <article class="work-card">
-            <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
-            </div>
-            <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
-            </div>
-          </article>
+          <ul class="works-list">
+            <li>
+              <article class="work-card">
+                <div class="work-thumbnail">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/rGRC_Nf8fww?si=p2KbnUIx04u9Anq_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    심금을 울리는 명곡
+                  </iframe>
+                </div>
+                <div class="work-info">
+                  <h3>Butterfly</h3>
+                  <p>그냥 보고 느껴</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="work-card">
+                <div class="work-thumbnail">
+                  <img src="./images/bookThumbnail.jpg" alt="인생 책 이미지" />
+                </div>
+                <div class="work-info">
+                  <h3>인생 책</h3>
+                  <p>나를 돌아보고 이해하고자 하는 책
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
 
