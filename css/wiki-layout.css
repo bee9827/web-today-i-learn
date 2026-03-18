@@ -125,6 +125,18 @@ main {
   transition: 0.2s;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
 /* 인생 작품 카드 */
 .works-list {
   display: flex;
@@ -195,6 +207,7 @@ main {
 }
 
 #til-form {
+  margin-top: 20px;
   outline: 1px solid var(--primary-color);
 }
 
