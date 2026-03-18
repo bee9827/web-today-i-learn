@@ -48,6 +48,9 @@
   align-items: center;
   gap: 32px;
   max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .profile-image {
@@ -117,6 +120,11 @@ main {
   border-radius: 4px;
 }
 
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
 /* 인생 작품 카드 */
 .works-list {
   display: flex;
@@ -184,6 +192,10 @@ main {
 .til-item p {
   color: #666;
   line-height: 1.6;
+}
+
+#til-form {
+  outline: 1px solid var(--primary-color);
 }
 
 /* 방명록 */
